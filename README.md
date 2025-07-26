@@ -43,7 +43,7 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - Duplicate rows: None
 - Missing data: None
 
-**Detailed variables**
+**Detailed Variables**
 - date: Date of transaction
 - sku: Stock Keeping Unit – unique identifier for each product
 - brand: Brand name associated with the product
@@ -59,3 +59,6 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - delivered_qty: Quantity of product actually delivered
 - units_sold: Quantity of product sold (after considering promotions and delivery)
 
+**Key Insights**
+- The dataset is clean and ready for analysis, with no missing values or duplicate rows.
+- The *date* column needs to be converted from object to datetime format to support time-based analysis.
