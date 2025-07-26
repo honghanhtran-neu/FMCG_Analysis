@@ -5,23 +5,32 @@
 - In this dynamic environment, Nestlé faces challenges in understanding how factors such as pricing, promotions, delivery times, and regional demand affect business performance. A lack of clear insight into these dynamics can result in missed opportunities for growth and inefficiencies in operations.
 - Thus, this data analysis project aims to help identify key business drivers that influence revenue growth and operational performance, enabling Nestlé to make more informed, data-driven decisions and align strategy with market trends.
 
-## 🎯 2. Key Analytical Questions
-### 2.1 Descriptive Analysis – What happened?
-- What are the historical sales trends over time by region, product category, and sales channel?
-- Which customers, products, and regions contributed the most to total revenue?
-- How did key operational metrics such as discount levels, delivery times, and product return rates vary over the three-year period?
-### 2.2 Diagnostic Analysis – Why did it happen?
-- What internal or external factors may explain variations in sales across time and geographic areas?
-- Is there a significant correlation between discount percentages and sales volume?
-- To what extent did delivery performance or return rates impact customer demand and satisfaction?
-### 2.3 Predictive Analysis – What is likely to happen?
-- Can we accurately forecast future sales based on historical data and influencing factors?
-- Which products or customer segments are likely to generate high revenue in upcoming periods?
-- Are there any recurring seasonal patterns or demand surges that the company should anticipate?
-### 2.4 Prescriptive Analysis – What should we do?
-- How can Nestlé optimize discount strategies to boost sales without compromising profit margins?
-- Which customer segments or product lines should be prioritized to drive sustainable growth?
-- What logistical or operational improvements could enhance customer satisfaction and overall sales performance?
+## 🎯 2. Key Business Questions
+To support relevant business units such as the Sales & Marketing Department, Demand Planning Team, and Regional Distribution Managers in making data-informed decisions, this project seeks to address the following key business questions:
+**Sales & Channel Performance**
+- Which sales channels are generating the highest revenue and growth?
+- How do sales differ across product categories, pack types, and regions?
+- Are there underperforming SKUs or regions that require intervention?
+
+**Promotion Effectiveness**
+- To what extent do promotions impact units sold across different products or channels?
+- Which types of promotions are most effective in driving sales uplift?
+- Are promotional products cannibalizing regular sales or encouraging upsell?
+
+**Pricing Strategy**
+- What is the relationship between unit price and quantity sold?
+- Are certain product segments more sensitive to price changes?
+- Does pricing vary significantly across regions or sales channels?
+
+**Inventory & Delivery Optimization**
+- Are there consistent delays in delivery across certain regions or product types?
+- How does delivery time impact sales performance?
+- Are there recurring patterns in stockouts or overstock situations?
+
+**Demand Trends & Seasonality**
+- Are there clear seasonal trends in product demand across months or quarters?
+- How have customer purchase patterns shifted over time?
+- Can we detect early signals of changing market demand?
 
 ## 🔍 3. Dataset Description
 - Source: Kaggle
