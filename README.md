@@ -62,3 +62,5 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 **Key Insights**
 - The dataset is clean and ready for analysis, with no missing values or duplicate rows.
 - The *date* column needs to be converted from object to datetime format to support time-based analysis.
+
+## 4. Data Cleaning & Preprocessing
