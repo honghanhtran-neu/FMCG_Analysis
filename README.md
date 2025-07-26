@@ -7,6 +7,7 @@
 
 ## 🎯 2. Key Business Questions
 To support relevant business units such as the Sales & Marketing Department, Demand Planning Team, and Regional Distribution Managers in making data-informed decisions, this project seeks to address the following key business questions:
+
 **Sales & Channel Performance**
 - Which sales channels are generating the highest revenue and growth?
 - How do sales differ across product categories, pack types, and regions?
