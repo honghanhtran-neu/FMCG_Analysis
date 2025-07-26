@@ -33,25 +33,29 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - How have customer purchase patterns shifted over time?
 - Can we detect early signals of changing market demand?
 
-## 🔍 3. Dataset Description
+## 🔍 3. Data Understanding
+**Dataset Overview**
 - Source: Kaggle
 - Format: CSV
 - Context: Simulated transactional sales data for Nestlé Poland
 - Time Period: From 2022 to 2024
-- Size: 190757 × 14
-- Detailed variables:
-  - date: Date of transaction
-  - sku: Stock Keeping Unit – unique identifier for each product
-  - brand: Brand name associated with the product
-  - segment: Market segment the product belongs to
-  - category: Product category (Milk, Yogurt, ReadyMeal, Juice, SnackBar)
-  - channel: Type of sales channel (Retail, E-commerce, Discount)
-  - region: Geographic location of the transaction (Central, North, South)
-  - pack_type: Packaging type
-  - price_unit: Unit price of the product (before promotions)
-  - promotion_flag: Indicates if a promotion was applied
-  - delivery_days: Number of days between order and delivery
-  - stock_available: Units of product available in stock at the time
-  - delivered_qty: Quantity of product actually delivered
-  - units_sold: Quantity of product sold (after considering promotions and delivery)
+- Size: 190757 rows × 14 columns
+- Duplicate rows: None
+- Missing data: None
+
+**Detailed variables**
+- date: Date of transaction
+- sku: Stock Keeping Unit – unique identifier for each product
+- brand: Brand name associated with the product
+- segment: Market segment the product belongs to
+- category: Product category (Milk, Yogurt, ReadyMeal, Juice, SnackBar)
+- channel: Type of sales channel (Retail, E-commerce, Discount)
+- region: Geographic location of the transaction (Central, North, South)
+- pack_type: Packaging type
+- price_unit: Unit price of the product (before promotions)
+- promotion_flag: Indicates if a promotion was applied
+- delivery_days: Number of days between order and delivery
+- stock_available: Units of product available in stock at the time
+- delivered_qty: Quantity of product actually delivered
+- units_sold: Quantity of product sold (after considering promotions and delivery)
 
