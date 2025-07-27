@@ -63,4 +63,15 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - The dataset is clean and ready for analysis, with no missing values or duplicate rows.
 - The *date* column needs to be converted from object to datetime format to support time-based analysis.
 
-## 4. Data Cleaning & Preprocessing
+## 4. Data Preprocessing
+**Datatype Standardization**
+- Converted `date` column from object to `datetime` format to enable time-based operations and aggregations.
+
+**Feature Engineering**
+- Calendar & Seasonality
+  - Extracted year, month, and week from the date column.
+  - Created a `is_holiday_peak` column indicating whether the date is a public holiday.
+  - Created a `is_holiday_week` column marking whether the week contains at least one holiday — based on the insight that customer demand may increase in the days leading up to a holiday.
+  - Added seasonal flags:
+    - `is_summer`: marks weeks during summer months.
+    - `is_winter`: marks weeks during winter months.
