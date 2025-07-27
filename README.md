@@ -75,3 +75,13 @@ To support relevant business units such as the Sales & Marketing Department, Dem
   - Added seasonal flags:
     - `is_summer`: marks weeks during summer months.
     - `is_winter`: marks weeks during winter months.
+
+- Product Lifecycle
+  - Computed `sku_age` for each SKU to track how long each product has been on the market.
+  - Defined a `lifecycle_stage` column based on product age and sales:
+    - *Introduction*: SKU age ≤ 12 weeks.
+    - *Growth*: SKU age from 13 to 30 weeks.
+    - *Maturity*: SKU age from 31 to 60 weeks.
+    - For SKUs older than 60 weeks:
+      - If rolling_sales ≥ median: still considered *Maturity*.
+      - If rolling_sales < median: classified as *Decline*.
