@@ -63,25 +63,42 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - The dataset is clean and ready for analysis, with no missing values or duplicate rows.
 - The *date* column needs to be converted from object to datetime format to support time-based analysis.
 
-## 4. Data Preprocessing
+## 🔁 4. Data Preprocessing
 **Datatype Standardization**
 - Converted `date` column from object to `datetime` format to enable time-based operations and aggregations.
 
 **Feature Engineering**
-- Calendar & Seasonality
-  - Extracted year, month, and week from the date column.
-  - Created a `is_holiday_peak` column indicating whether the date is a public holiday.
-  - Created a `is_holiday_week` column marking whether the week contains at least one holiday — based on the insight that customer demand may increase in the days leading up to a holiday.
-  - Added seasonal flags:
-    - `is_summer`: marks weeks during summer months.
-    - `is_winter`: marks weeks during winter months.
+*Calendar & Seasonality*
+- Extracted year, month, and week from the date column.
+- Created a `is_holiday_peak` column indicating whether the date is a public holiday.
+- Created a `is_holiday_week` column marking whether the week contains at least one holiday — based on the insight that customer demand may increase in the days leading up to a holiday.
+- Added seasonal flags:
+  - `is_summer`: marks weeks during summer months.
+  - `is_winter`: marks weeks during winter months.
 
-- Product Lifecycle
-  - Computed `sku_age` for each SKU to track how long each product has been on the market.
-  - Defined a `lifecycle_stage` column based on product age and sales:
-    - *Introduction*: SKU age ≤ 12 weeks.
-    - *Growth*: SKU age from 13 to 30 weeks.
-    - *Maturity*: SKU age from 31 to 60 weeks.
-    - For SKUs older than 60 weeks:
-      - If rolling_sales ≥ median: still considered *Maturity*.
-      - If rolling_sales < median: classified as *Decline*.
+*Product Lifecycle*
+- Computed `sku_age` for each SKU to track how long each product has been on the market.
+- Defined a `lifecycle_stage` column based on product age and sales:
+  - Introduction: SKU age ≤ 12 weeks.
+  - Growth: SKU age from 13 to 30 weeks.
+  - Maturity: SKU age from 31 to 60 weeks.
+  - For SKUs older than 60 weeks:
+    - If rolling_sales ≥ median: still considered Maturity.
+    - If rolling_sales < median: classified as Decline.
+
+**Lag, Rolling & Target Features**
+*Lag Features*
+- `lag_1`: units sold in previous week.
+- `lag_2`: units sold two weeks ago.
+
+*Rolling Features*
+- `rolling_mean_4`: 4-week moving average of units sold (excluding current week).
+- `rolling_std_4`: 4-week moving standard deviation – captures short-term demand volatility.
+
+*Momentum Feature*
+- `momentum`: short-term change in demand = lag_1 - lag_2.
+
+*Target Variable*
+- `target_next_week`: units sold in the following week – used as the prediction target for supervised learning.
+
+## 5. Exploratory Data Analysis (EDA)
