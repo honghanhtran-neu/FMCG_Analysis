@@ -111,5 +111,5 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - No significant outliers were detected, suggesting a consistent pricing policy.
 *Inventory levels are generally healthy – but risk of stockouts*
 - Inventory distribution is close to normal, reflecting reasonable stock management.
-- However, there's a small cluster near zero → signaling possible stockout risks during certain periods.
+- However, there's a small cluster near zero → signaling possible stockout risks.
 
