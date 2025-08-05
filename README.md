@@ -102,3 +102,14 @@ To support relevant business units such as the Sales & Marketing Department, Dem
 - `target_next_week`: units sold in the following week – used as the prediction target for supervised learning.
 
 ## 5. Exploratory Data Analysis (EDA)
+**Univariate Analysis**
+*Sales mostly low – but with significant spikes*
+- Most products are sold in small quantities (10–20 units), indicating stable demand and a prevalence of small orders.
+- However, there are several large outliers likely linked to special events or promotional campaigns.
+*Price is stable and well-controlled*
+- The price distribution is almost uniform, with no dominant price point.
+- No significant outliers were detected, suggesting a consistent pricing policy.
+*Inventory levels are generally healthy – but risk of stockouts*
+- Inventory distribution is close to normal, reflecting reasonable stock management.
+- However, there's a small cluster near zero → signaling possible stockout risks during certain periods.
+
